@@ -1,11 +1,11 @@
 .hero_banner {
-    background: url("../images/main-banner.jpg") no-repeat center center;
-    height: 100vh;
+    background: url("../images/main-banner.jpg") no-repeat center 36%;
     position: relative;
     z-index: 1;
     position: relative;
     display: flex;
     flex-direction: column;
+    padding-bottom: 4em;
 }
 
 .hero_banner:before {
@@ -126,7 +126,7 @@ label[for="nav_toggle"] {
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
-
+    padding: 5em 0;
 }
 
 .hero_card {
