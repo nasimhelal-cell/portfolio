@@ -62,26 +62,30 @@ label[for="nav_toggle"] {
 
 .navbar ul li {
     display: inline-block;
-    padding: 1em 2em;
+    padding: 0em 1em;
 }
 
 .navbar ul li a {
     position: relative;
     text-transform: capitalize;
+    padding: 1em ;
 }
-.navbar ul li a:before{
-    position: absolute; 
+
+.navbar ul li a:before {
+    position: absolute;
     content: "";
-    bottom: -.5em;
-    left: 0;
-    transform: scale(0,1);
+    bottom: .5em;
+    left: 22%;
+    transform: scale(0, 1);
     background: var(--nav-text-clr);
     height: 1.5px;
-    transition: 500ms ease-in-out;
+    width: 60%;
+    transition: transform 400ms ease-in-out;
 }
+
 .navbar ul li a:hover::before {
-    transform: scale(1,1);
-    width: 100%;
+    transform: scale(1, 1);
+    
 }
 
 
@@ -89,6 +93,7 @@ label[for="nav_toggle"] {
 @media(width<=67em) {
     label[for="nav_toggle"] {
         display: block;
+        user-select: none;
     }
 
     .nav_toggle:checked~ul {
@@ -115,6 +120,7 @@ label[for="nav_toggle"] {
         background: #000;
         width: 100%;
         text-align: center;
+        padding: 1em 2em;
         border-bottom: 1px solid white;
     }
 
@@ -164,11 +170,30 @@ label[for="nav_toggle"] {
     padding: 1em 2em;
     border-radius: 100vmax;
     letter-spacing: 3px;
-    transition-duration: 600ms;
-    transition-property: background;
+    position: relative;
+    z-index: 1;
+    transition: color 600ms ease-out;
+}
+
+.hero_card_context_btn::before {
+    position: absolute;
+    content: "";
+    background: white;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: scale(0, 1);
+    border-radius: 100vmax;
+    z-index: -1;
+    transition: transform 800ms ease-out;
+}
+
+.hero_card_context_btn:hover::before {
+    transform: scale(1, 1);
+    transition: 800ms ease-out;
 }
 
 .hero_card_context_btn:hover {
-    background: #dddde4;
     color: black;
 }
