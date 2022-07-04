@@ -1,0 +1,26 @@
+@import "global.css";
+@import "header.css";
+.nasim{
+    width: 10em;
+    height: 5em;
+    background: red;
+    position: relative;
+}
+.nasim:after{
+    position: absolute;
+    content: "";
+    bottom: -.7em;
+    right: 0;
+   
+    background: green;
+    transform: scale(0,1);
+    height: .4em;
+    transition: 1s;
+    transition-property: transform;
+    transform-origin: center;
+}
+.nasim:hover:after{
+    background: #000;
+    width: 100%;
+    transform: scale(1,1);
+}

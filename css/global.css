@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&family=Open+Sans:wght@300&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+:root {
+    --nav-text-clr: #fff;
+    --h2--font-family: 'Finlandica', sans-serif;
+    --h3--font-family: 'Open Sans', sans-serif;
+    --border-clr: #fff;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
