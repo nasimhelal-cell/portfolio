@@ -68,7 +68,7 @@ label[for="nav_toggle"] {
 .navbar ul li a {
     position: relative;
     text-transform: capitalize;
-    padding: 1em ;
+    padding: 1em;
 }
 
 .navbar ul li a:before {
@@ -85,7 +85,7 @@ label[for="nav_toggle"] {
 
 .navbar ul li a:hover::before {
     transform: scale(1, 1);
-    
+
 }
 
 
@@ -95,9 +95,9 @@ label[for="nav_toggle"] {
         display: block;
         user-select: none;
     }
-
     .nav_toggle:checked~ul {
         display: none;
+        
     }
 
     .navbar {
